@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+:root {
+
+    /* COLORS */
+    --color-cyan-600: #4D96A9;
+    --color-cyan-300: #8FE3F9;
+    --color-purple-600: #855FB1;
+    --color-purple-300: #D9B8FF;
+    --color-slate-900: #28283D;
+    --color-slate-600: #87879D;
+    --color-slate-300: #D1D1DF;
+    --color-white: #D1D1DF;
+
+    /* SPACING */
+    --spacing-1400: 112px;
+    --spacing-1000: 80px;
+    --spacing-900: 72px;
+    --spacing-800: 64px;
+    --spacing-700: 56px;
+    --spacing-500: 40px;
+    --spacing-400: 32px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+
+
+}
+
+/* TEXT PRESETS */
+/* MOBILE */
+h1 {
+    color: var(--color-slate-900, #28283D);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Red Hat Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%; /* 35.2px */
+}
+
+h2 {
+    color: var(--color-slate-900, #28283D);
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Red Hat Display";
+font-size: 32px;
+font-style: normal;
+font-weight: 900;
+line-height: 110%; /* 35.2px */
+}
+
+.eyebrow {
+    color: var(--color-cyan-600, #4D96A9);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Red Hat Display";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%; /* 13.2px */
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+p {
+    color: var(--color-slate-600, #87879D);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+}
+
+.button-text-1 {
+    color: var(--color-white, #FAFAFA);
+font-feature-settings: 'liga' off, 'clig' off;
+
+/* desktop/text-preset-5 */
+font-family: "Red Hat Display";
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: 150%; /* 24px */
+}
+.button-text-2 {
+    color: var(--color-cyan-300, #8FE3F9);
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    /* desktop/text-preset-5 */
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; /* 24px */
+}
+
+/* TEXT COLOR PRESETS */
+
+.tc-slate-900 {
+    color: var(--color-slate-900, #28283D);
+}
+.tc-cyan-600 {
+    color: var(--color-cyan-600, #4D96A9);
+}
+.tc-white {
+    color: var(--color-white);
+}
+
+/* BUTTONS */
+
+.primary-button {
+    transition: background-color 300ms ease-in-out;
+    display: inline-flex;
+    padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100, 8px);
+    border: none;
+    border-radius: 29px;
+    background-color: var(--color-cyan-600, #4D96A9);
+}
+.primary-button:hover {
+    background-color: #71C0D4;
+}
+.secondary-button {
+    transition: background-color 300ms ease-in-out;
+    display: inline-flex;
+    padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100, 8px);
+    border-radius: 29px;
+    background: var(--color-purple-600, #855FB1);
+    border: none;
+
+}
+.secondary-button:hover {
+    background: #B18BDD;
+}
+
+
