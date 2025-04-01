@@ -1,0 +1,15 @@
+CMD + E = Select occurences
+cmd + f, så option + enter = select alle som stemmer søket
+cmd + option + arrow = legg på flere cursors
+Emmet: Remove tag for å fjerne en tag
+Ctrl + shift for å tab-hoppe
+Cmd + p for å søke i filer
+Use: Type div>p and hit your shortcut → <div><p></p></div>.
+ul>li.item-$*5 → Instant numbered list.
+lorem20 → Quick dummy text for prototyping.
+div.container>row>col*3 → <div class="container"><div class="row"><div class="col"></div><div class="col"></div><div class="col"></div></div></div>.
+
+Extend Cmd + F to the Find and Replace widget: Cmd + Option + F.
+Type your search term, tab to the replace field, enter the replacement, then:
+Enter: Replace one at a time.
+Cmd + Option + Enter: Replace all matches instantly.

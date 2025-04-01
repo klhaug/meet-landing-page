@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -18,7 +20,7 @@ html {
     --color-slate-900: #28283D;
     --color-slate-600: #87879D;
     --color-slate-300: #D1D1DF;
-    --color-white: #D1D1DF;
+    --color-white: #fafafa;
 
     /* SPACING */
     --spacing-1400: 112px;
@@ -51,13 +53,13 @@ h1 {
 
 h2 {
     color: var(--color-slate-900, #28283D);
-text-align: center;
-font-feature-settings: 'liga' off, 'clig' off;
-font-family: "Red Hat Display";
-font-size: 32px;
-font-style: normal;
-font-weight: 900;
-line-height: 110%; /* 35.2px */
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: "Red Hat Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%; /* 35.2px */
 }
 
 .eyebrow {
@@ -73,6 +75,10 @@ line-height: 110%; /* 35.2px */
     text-transform: uppercase;
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     color: var(--color-slate-600, #87879D);
     text-align: center;
@@ -85,7 +91,7 @@ p {
 }
 
 .button-text-1 {
-    color: var(--color-white, #FAFAFA);
+color: var(--color-white, #FAFAFA);
 font-feature-settings: 'liga' off, 'clig' off;
 
 /* desktop/text-preset-5 */
@@ -125,7 +131,7 @@ line-height: 150%; /* 24px */
     transition: background-color 300ms ease-in-out;
     display: inline-flex;
     padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     gap: var(--spacing-100, 8px);
     border: none;
@@ -151,4 +157,47 @@ line-height: 150%; /* 24px */
     background: #B18BDD;
 }
 
+/* GRAPHICAL ICON */
+.graphic-element{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.line {
+    height: var(--spacing-1000);
+    border-left: 1px solid var(--color-slate-300);
+}
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--spacing-700);
+    height: var(--spacing-700);
+    border-radius: 100%;
+    border: 1px solid var(--color-slate-300);
+    color: var(--color-slate-600);
+}
+
+/* IMAGE GRID */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--spacing-200);
+}
+
+img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+footer {
+    z-index:0;
+    min-height: 374px;
+    background: linear-gradient(#71c0d4cd, #71c0d4e0), url(./assets/mobile/image-footer.jpg);
+    background-size: cover;
+}
 
