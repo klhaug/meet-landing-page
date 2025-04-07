@@ -13,3 +13,5 @@ Extend Cmd + F to the Find and Replace widget: Cmd + Option + F.
 Type your search term, tab to the replace field, enter the replacement, then:
 Enter: Replace one at a time.
 Cmd + Option + Enter: Replace all matches instantly.
+
+fn + arrow fortere hopping
