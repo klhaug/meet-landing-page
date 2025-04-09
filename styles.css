@@ -112,6 +112,17 @@ line-height: 150%; /* 24px */
     font-weight: 900;
     line-height: 150%; /* 24px */
 }
+.button-text-3 {
+    color: var(--color-purple-300);
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    /* desktop/text-preset-5 */
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; /* 24px */
+}
 
 /* TEXT COLOR PRESETS */
 
@@ -149,6 +160,7 @@ line-height: 150%; /* 24px */
     padding: var(--spacing-200, 16px) var(--spacing-500, 40px);
     flex-direction: column;
     align-items: center;
+    flex-direction: row;
     justify-content: center;
     width: fit-content;
     gap: var(--spacing-100, 8px);
@@ -199,6 +211,20 @@ header img{
     padding: var(--spacing-400) ;
 }
 
+/* ABOUT */
+.about{
+    padding: var(--spacing-400);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-800);
+}
+
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-400);
+}
+
 /* GRAPHICAL ICON */
 .graphic-element{
     width: 100%;
@@ -212,6 +238,7 @@ header img{
     border-left: 1px solid var(--color-slate-300);
 }
 .circle {
+    background-color: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,21 +263,27 @@ img {
     border-radius: 16px;
 }
 
+
+
 footer {
+    height: fit-content;
+    margin-top: -28px;
+}
+
+footer .graphic-element {
+    transform: translateY(calc(var(--spacing-700)/2));
+}
+
+footer section {
     z-index:0;
     min-height: 374px;
     background: linear-gradient(#71c0d4cd, #71c0d4e0), url(./assets/tablet/image-footer.jpg);
     background-size: cover;
     background-position: center 30%;
     display: flex;
+    gap: var(--spacing-400);
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-footer section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
