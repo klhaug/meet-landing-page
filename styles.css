@@ -313,7 +313,7 @@ footer .graphic-element {
 footer section {
     z-index:0;
     height: fit-content;
-    background: linear-gradient(#71c0d4cd, #71c0d4e0), url(./assets/tablet/image-footer.jpg);
+    background: linear-gradient(#4d97a9d9, #4d97a9d4), url(./assets/tablet/image-footer.jpg);
     background-size: cover;
     background-position: center 30%;
     display: flex;

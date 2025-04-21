@@ -46,6 +46,10 @@
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
     }
+
+    .eyebrow {
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -54,6 +58,9 @@
     }
     p {
         font-size: 18px;
+    }
+    h2 {
+        font-size: 40px;
     }
 
     header {
@@ -114,6 +121,10 @@
     .footer-content-wrapper p {
         max-width: 355px ;
         align-self: flex-start;
+    }
+
+    .eyebrow {
+        font-size: 16px;
     }
 
 
