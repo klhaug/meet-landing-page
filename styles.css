@@ -28,6 +28,8 @@ html {
     --spacing-900: 72px;
     --spacing-800: 64px;
     --spacing-700: 56px;
+    --spacing-600: 48px;
+    --spacing-550: 44px;
     --spacing-500: 40px;
     --spacing-400: 32px;
     --spacing-300: 24px;
@@ -174,7 +176,9 @@ line-height: 150%; /* 24px */
 }
 
 body{
+    background-color: var(--color-white);
     width: 100vw;
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -190,7 +194,7 @@ header img{
 }
 
 /* HERO */
-.hero div:first-of-type {
+.hero-img-container {
     margin-top: var(--spacing-800);
     display: flex;
     gap: 16px;
@@ -206,15 +210,35 @@ header img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--spacing-300);
     width: 100%;
-    padding: var(--spacing-400) ;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 32px;
+    padding-top: var(--spacing-600);
+}
+
+.hero-content-container{
+    max-width: 448px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+
+}
+
+.hero-btn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-200);
 }
 
 /* ABOUT */
 .about{
     padding: var(--spacing-400);
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: var(--spacing-800);
 }
@@ -264,6 +288,7 @@ img {
 }
 
 
+/* FOOTER */
 
 footer {
     height: fit-content;
@@ -276,14 +301,28 @@ footer .graphic-element {
 
 footer section {
     z-index:0;
-    min-height: 374px;
+    height: fit-content;
     background: linear-gradient(#71c0d4cd, #71c0d4e0), url(./assets/tablet/image-footer.jpg);
     background-size: cover;
     background-position: center 30%;
     display: flex;
+    padding-top: 0;
+    padding: var(--spacing-800) var(--spacing-400);
     gap: var(--spacing-400);
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.footer-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 504px;
+    gap: var(--spacing-300);
+}
+
+footer h2, footer p {
+    color: var(--color-white);
+}
